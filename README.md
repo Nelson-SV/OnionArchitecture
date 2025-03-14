@@ -2,8 +2,7 @@
 
 This project follows the Onion Architecture pattern with the following structure:
 
-OnionArchitecture/ │── OnionArchitecture.sln │── Core.Domain/ │── Application/  │── Infrastructure/  │── API.REST/  │── WebSockets/  │── Startup/ 
-
+OnionArchitecture/ │── OnionArchitecture.sln │── Core.Domain/ │ ├── Core.Domain.csproj │── Application/ │ ├── Application.csproj │── Infrastructure/ │ ├── Infrastructure.csproj │── API.REST/ │ ├── API.REST.csproj │── WebSockets/ │ ├── WebSockets.csproj │── Startup/ │ ├── Startup.csproj
 ---
 
 ## 🛠️ **Setup Instructions**
