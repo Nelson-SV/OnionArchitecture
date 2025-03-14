@@ -2,8 +2,21 @@
 
 This project follows the Onion Architecture pattern with the following structure:
 
-OnionArchitecture/ │── OnionArchitecture.sln │── Core.Domain/ │ ├── Core.Domain.csproj │── Application/ │ ├── Application.csproj │── Infrastructure/ │ ├── Infrastructure.csproj │── API.REST/ │ ├── API.REST.csproj │── WebSockets/ │ ├── WebSockets.csproj │── Startup/ │ ├── Startup.csproj
----
+```mathematica
+OnionArchitecture/
+│── OnionArchitecture.sln
+│── Core.Domain/
+│   ├── Core.Domain.csproj
+│── Application/
+│   ├── Application.csproj
+│── Infrastructure/
+│   ├── Infrastructure.csproj
+│── API.REST/
+│   ├── API.REST.csproj
+│── Startup/
+│   ├── Startup.csproj
+```
+
 
 ## 🛠️ **Setup Instructions**
 Follow these steps to set up the project:
