@@ -1,6 +1,9 @@
+﻿using System;
+using System.Collections.Generic;
+
 namespace Core.Domain.Entities;
 
-public class Group
+public partial class Group
 {
     public string Id { get; set; } = null!;
 

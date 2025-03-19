@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\Infrastructure.PostGres\Infrastructure.PostGres.csproj" />
+    <ProjectReference Include="..\Infrastructure.Postgres\Infrastructure.Postgres.csproj" />
     <ProjectReference Include="..\Api.Rest\Api.Rest.csproj" />
     <ProjectReference Include="..\Infrastructure.WebSocket\Infrastructure.WebSocket.csproj" />
     <ProjectReference Include="..\Api.WebSocket\Api.WebSocket.csproj" />

@@ -1,25 +1,30 @@
-﻿using Core.Domain.Entities;
+﻿using System;
+using System.Collections.Generic;
+using Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Postgres.Scaffolding;
 
 public partial class AppDbContext : DbContext
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+    public AppDbContext(DbContextOptions<AppDbContext> options)
+        : base(options)
+    {
+    }
 
-    
     public virtual DbSet<Group> Groups { get; set; }
+
     public virtual DbSet<Message> Messages { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
-    
-    
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Group>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("group_pkay");
 
-            entity.ToTable("group", "public");
+            entity.ToTable("group");
 
             entity.Property(e => e.Id).HasColumnName("id");
 
@@ -37,7 +42,8 @@ public partial class AppDbContext : DbContext
                     j =>
                     {
                         j.HasKey("Groupid", "Userid").HasName("groupmember_pk");
-                        j.ToTable("groupmember", "public");
+                        j.ToTable("groupmember");
+                        j.HasIndex(new[] { "Userid" }, "IX_groupmember_userid");
                         j.IndexerProperty<string>("Groupid").HasColumnName("groupid");
                         j.IndexerProperty<string>("Userid").HasColumnName("userid");
                     });
@@ -47,7 +53,9 @@ public partial class AppDbContext : DbContext
         {
             entity
                 .HasNoKey()
-                .ToTable("message", "public");
+                .ToTable("message");
+
+            entity.HasIndex(e => e.Groupid, "IX_message_groupid");
 
             entity.HasIndex(e => e.Userid, "IX_message_userid");
 
@@ -72,7 +80,7 @@ public partial class AppDbContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("user_pkey");
 
-            entity.ToTable("user", "public");
+            entity.ToTable("user");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Email).HasColumnName("email");
@@ -86,4 +94,3 @@ public partial class AppDbContext : DbContext
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 }
-

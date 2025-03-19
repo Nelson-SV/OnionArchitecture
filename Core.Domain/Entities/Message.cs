@@ -1,10 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+
 namespace Core.Domain.Entities;
 
-public class Message
+public partial class Message
 {
     public string Messagetext { get; set; } = null!;
 
-    public string Id { get; set; } = null!;
+    public string? Id { get; set; }
 
     public string Userid { get; set; } = null!;
 

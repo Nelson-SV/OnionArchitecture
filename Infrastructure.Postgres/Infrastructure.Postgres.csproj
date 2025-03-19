@@ -16,6 +16,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>library</OutputType>
+    <RootNamespace>Infrastructure.PostGres</RootNamespace>
   </PropertyGroup>
 
 </Project>

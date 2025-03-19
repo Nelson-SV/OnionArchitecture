@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Core.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{A0B4E546-6459-47D8-A685-540F85C5BFB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.PostGres", "Infrastructure.PostGres\Infrastructure.PostGres.csproj", "{42CF09DB-2E7F-46CE-A956-28DAD2EA5348}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Postgres", "Infrastructure.Postgres\Infrastructure.Postgres.csproj", "{42CF09DB-2E7F-46CE-A956-28DAD2EA5348}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Rest", "Api.Rest\Api.Rest.csproj", "{8A7F80A3-C3BF-49CF-94DD-D4A467A99494}"
 EndProject
