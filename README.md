@@ -1,5 +1,4 @@
-# Onion Architecture .NET Backend + React & Typescript Frontend
-# Step By Step Guide
+# Onion Architecture .NET Backend + React & Typescript Frontend - Step By Step Guide
 
 This project follows the Onion Architecture pattern with the following structure:
 
