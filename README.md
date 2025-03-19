@@ -1,4 +1,5 @@
-# Onion Architecture .NET Backend - Basic Setup
+# Onion Architecture .NET Backend + React & Typescript Frontend
+# Step By Step Guide
 
 This project follows the Onion Architecture pattern with the following structure:
 
@@ -127,7 +128,7 @@ dotnet add package NSwag.AspNetCore
 dotnet build
 ```
 
-### **5. Database Setup with Docker**
+### **5. PostgreSQL Database Setup with Docker**
 ```sh
 # Start PostgreSQL container (from where docker-compose.yml file is)
 docker-compose up -d
