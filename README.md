@@ -3,24 +3,32 @@
 This project follows the Onion Architecture pattern with the following structure:
 
 ```mathematica
-YourDirectoryName/
-│── YourSolutionName.sln
-│── Core.Domain/
-│   ├── Core.Domain.csproj
-│── Application/
-│   ├── Application.csproj
-│── Infrastructure.Postgres/
-│   ├── Infrastructure.Postgres.csproj
-│── Api.Rest/
-│   ├── Api.Rest.csproj
-│── Api.Websocket/
-│   ├── Api.Websocket.csproj
-│── Infrastructure.Postgres.Scaffolding/
-│   ├── Infrastructure.Postgres.Scaffolding.csproj
-│── Infrastructure.Websocket/
-│   ├── Infrastructure.Websocket.csproj
-│── Startup/
-│   ├── Startup.csproj
+ProjectRoot/
+│── server/
+│   │── YourSolutionName.sln
+│   │── Core.Domain/
+│   │   ├── Core.Domain.csproj
+│   │── Application/
+│   │   ├── Application.csproj
+│   │── Infrastructure.Postgres/
+│   │   ├── Infrastructure.Postgres.csproj
+│   │── Api.Rest/
+│   │   ├── Api.Rest.csproj
+│   │── Api.Websocket/
+│   │   ├── Api.Websocket.csproj
+│   │── Infrastructure.Postgres.Scaffolding/
+│   │   ├── Infrastructure.Postgres.Scaffolding.csproj
+│   │── Infrastructure.Websocket/
+│   │   ├── Infrastructure.Websocket.csproj
+│   │── Startup/
+│   │   ├── Startup.csproj
+│── client/
+│   │── package.json
+│   │── pnpm-lock.yaml
+│   │── tsconfig.json
+│   │── vite.config.ts
+│   │── src/
+│   │── public/
 ```
 
 ## 🛠️ **Setup Instructions**
