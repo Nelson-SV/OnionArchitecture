@@ -9,14 +9,19 @@ YourDirectoryName/
 │   ├── Core.Domain.csproj
 │── Application/
 │   ├── Application.csproj
-│── Infrastructure/
-│   ├── Infrastructure.csproj
-│── API.REST/
-│   ├── API.REST.csproj
+│── Infrastructure.Postgres/
+│   ├── Infrastructure.Postgres.csproj
+│── Api.Rest/
+│   ├── Api.Rest.csproj
+│── Api.Websocket/
+│   ├── Api.Websocket.csproj
+│── Infrastructure.Postgres.Scaffolding/
+│   ├── Infrastructure.Postgres.Scaffolding.csproj
+│── Infrastructure.Websocket/
+│   ├── Infrastructure.Websocket.csproj
 │── Startup/
 │   ├── Startup.csproj
 ```
-
 
 ## 🛠️ **Setup Instructions**
 Follow these steps to set up the project:
@@ -72,24 +77,29 @@ dotnet add package Microsoft.EntityFrameworkCore
 dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
 dotnet add package PgCtxSetup
 ```
+
 ## **Inside Infrastructure.PostGres.Scaffolding directory, run:**
 ```sh
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
 ```
+
 ## **Inside Infrastructure.Websocket directory, run:**
 ```sh
 dotnet add package uldahlalex.websocket.boilerplate
 ```
+
 ## **Inside Api.Rest directory, run:**
 ```sh
 dotnet add package NSwag.AspNetCore
 ```
+
 ## **Inside Api.WebSocket directory, run:**
 ```sh
 dotnet add package uldahlalex.websocket.boilerplate
 ```
+
 ## **Inside Application directory, run:**
 ```sh
 dotnet add package JWT
@@ -98,6 +108,7 @@ dotnet add package Microsoft.Extensions.Options
 dotnet add package Microsoft.Extensions.Options.ConfigurationExtensions
 dotnet add package Microsoft.Extensions.Configuration.Abstractions
 ```
+
 ## **Inside Startup directory, run:**
 ```sh
 dotnet add package Microsoft.Extensions.Logging.Abstractions
