@@ -1,0 +1,17 @@
+### Register a new user
+POST http://localhost:5001/api/auth/Register
+Content-Type: application/json
+
+{
+  "email": "testuser@memohouse.com",
+  "password": "Password123!"
+}
+
+### Register a new user
+POST http://localhost:5001/api/auth/Login
+Content-Type: application/json
+
+{
+  "email": "testuser@memohouse.com",
+  "password": "Password123!"
+}

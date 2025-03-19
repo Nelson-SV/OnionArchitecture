@@ -11,9 +11,9 @@ public class UserRepository(AppDbContext ctx) : IUserRepository
         return ctx.Users.ToList();
     }
 
-    public User? GetUserByIdOrNull(string id)
+    public User? GetUserByIdOrNull(string email)
     {
-        return ctx.Users.FirstOrDefault(u => u.Id == id);
+        return ctx.Users.FirstOrDefault(u => u.Email == email);
     }
 
     public User AddUser(User user)
@@ -29,15 +29,9 @@ public class UserRepository(AppDbContext ctx) : IUserRepository
         return ctx.SaveChanges() > 0;
     }
 
-    public bool DeleteUser(string id)
+    public bool DeleteUser(User user)
     {
-        User? user = GetUserByIdOrNull(id);
-        if (user == null)
-        {
-            return false;
-        } 
         ctx.Users.Remove(user);
-        ctx.SaveChanges();
-        return true;
+        return ctx.SaveChanges() > 0;
     }
 }
