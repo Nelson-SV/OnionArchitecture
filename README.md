@@ -128,6 +128,14 @@ docker-compose up -d
 docker ps
 ```
 
+### **6. Create client template**
+```sh
+pnpm create vite client --template react-ts
+cd client
+pnpm install
+pnpm run dev
+```
+
 ## 🛠️ **Steps for adding to Git / GitHub**
 ```sh
 git init
