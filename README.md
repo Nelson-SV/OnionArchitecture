@@ -78,29 +78,29 @@ dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
 dotnet add package PgCtxSetup
 ```
 
-## **Inside Infrastructure.PostGres.Scaffolding directory, run:**
+Inside Infrastructure.PostGres.Scaffolding directory, run:
 ```sh
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
 ```
 
-## **Inside Infrastructure.Websocket directory, run:**
+Inside Infrastructure.Websocket directory, run:
 ```sh
 dotnet add package uldahlalex.websocket.boilerplate
 ```
 
-## **Inside Api.Rest directory, run:**
+Inside Api.Rest directory, run:
 ```sh
 dotnet add package NSwag.AspNetCore
 ```
 
-## **Inside Api.WebSocket directory, run:**
+Inside Api.WebSocket directory, run:
 ```sh
 dotnet add package uldahlalex.websocket.boilerplate
 ```
 
-## **Inside Application directory, run:**
+Inside Application directory, run:
 ```sh
 dotnet add package JWT
 dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
@@ -109,7 +109,7 @@ dotnet add package Microsoft.Extensions.Options.ConfigurationExtensions
 dotnet add package Microsoft.Extensions.Configuration.Abstractions
 ```
 
-## **Inside Startup directory, run:**
+Inside Startup directory, run:
 ```sh
 dotnet add package Microsoft.Extensions.Logging.Abstractions
 dotnet add package Microsoft.Extensions.Logging.Console
