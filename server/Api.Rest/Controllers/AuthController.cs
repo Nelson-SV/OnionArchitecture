@@ -1,6 +1,6 @@
 using Api.Rest.AuthExtensions;
 using Application.Interfaces;
-using Application.Models.Dtos;
+using Application.Models.Dtos.Auth;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Rest.Controllers;
@@ -21,8 +21,8 @@ public class AuthController(ISecurityService securityService) : ControllerBase
         return Ok(securityService.Login(dto));
     }
 
-    [Route(RegisterRoute)]
     [HttpPost]
+    [Route(RegisterRoute)]
     public ActionResult<AuthResponseDto> Register([FromBody] AuthRequestDto dto)
     {
         return Ok(securityService.Register(dto));

@@ -6,6 +6,7 @@ using Application.Interfaces;
 using Application.Interfaces.Infrastructure.Postgres;
 using Application.Models;
 using Application.Models.Dtos;
+using Application.Models.Dtos.Auth;
 using Application.Models.Enums;
 using Core.Domain.Entities;
 using JWT;
@@ -47,7 +48,7 @@ public class SecurityService(IOptionsMonitor<AppOptions> optionsMonitor, IUserRe
         {
             Id = Guid.NewGuid().ToString(),
             Email = dto.Email,
-            Role = Roles.UserRole,
+            Role = Roles.AdminRole,
             Salt = salt,
             Hash = hash
         });

@@ -1,5 +1,6 @@
 using Application.Models;
 using Application.Models.Dtos;
+using Application.Models.Dtos.Auth;
 
 namespace Application.Interfaces;
 
