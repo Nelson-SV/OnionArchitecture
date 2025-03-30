@@ -157,8 +157,8 @@ git push -u origin main
 
 ## ** Small notes**
 In Infrastructure.Postgres.csproj, Api.Rest.csproj, Api.WebSocket.csproj<br>
-Add the following statement inside "<PropertyGroup>":<br>
-"<OutputType>library</OutputType>"
+Add the following statement inside `<PropertyGroup>`:<br>
+`<OutputType>library</OutputType>`
 
 ## 🚀 ** Running the Projects**
 ```sh
