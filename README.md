@@ -56,7 +56,7 @@ dotnet sln add Infrastructure.Postgres/Infrastructure.Postgres.csproj
 dotnet sln add Infrastructure.Postgres.Scaffolding/Infrastructure.Postgres.Scaffolding.csproj
 dotnet sln add Infrastructure.Websocket/Infrastructure.Websocket.csproj
 dotnet sln add Api.Rest/Api.Rest.csproj
-dotnet sln add WebSockets/WebSockets.csproj
+dotnet sln add Api.WebSocket/Api.WebSocket.csproj
 dotnet sln add Startup/Startup.csproj
 
 dotnet add Application/Application.csproj reference Core.Domain/Core.Domain.csproj
@@ -65,7 +65,7 @@ dotnet add Infrastructure.Postgres/Infrastructure.Postgres.csproj reference Infr
 dotnet add Infrastructure.Postgres.Scaffolding/Infrastructure.Postgres.Scaffolding.csproj reference Core.Domain/Core.Domain.csproj
 dotnet add Infrastructure.Websocket/Infrastructure.Websocket.csproj reference Application/Application.csproj
 dotnet add Api.Rest/Api.Rest.csproj reference Application/Application.csproj
-dotnet add WebSockets/WebSockets.csproj reference Application/Application.csproj
+dotnet add Api.WebSocket/Api.WebSocket.csproj reference Application/Application.csproj
 dotnet add Startup/Startup.csproj reference Application/Application.csproj
 dotnet add Startup/Startup.csproj reference Infrastructure.Postgres/Infrastructure.Postgres.csproj
 dotnet add Startup/Startup.csproj reference Api.Rest/Api.Rest.csproj
@@ -83,7 +83,7 @@ dotnet add package PgCtxSetup
 
 Inside Infrastructure.Postgres.Scaffolding directory, run:
 ```sh
-dotnet add package Npgsql.EntityFrameworkCore.PostgresQL
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet add package Microsoft.Extensions.DependencyInjection.Abstractions
 dotnet add package Microsoft.EntityFrameworkCore.Relational
